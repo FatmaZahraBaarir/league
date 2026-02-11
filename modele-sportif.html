@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<title>Modele Sportif - Projet GL League</title>
+		<meta charset="utf-8"/>
+		<meta name="author" content="BAARIR Fatma-Zahra HADDAR Karim PHUNG Enzo"/>
+		<meta name="description" content="Modélisation sportive du projet LEAGUE"/>
+		<link rel="icon" href="image/nbafavicon.png" type="image/jpeg"/>
+		<link rel="stylesheet" href="style/style.css"/>
+	</head>
+
+	<body>
+		<header>
+			<a href="index.html">
+				<img class="logo" src="image/logoCYU.png" alt="Logo de l’Université de Cergy-Pontoise" width="300"
+					height="120"/>
+			</a>
+			<nav class="main-nav">
+				<ul class="home-menu">
+					<li><a href="index.html">Accueil</a></li>
+				</ul>
+				<ul>
+					<li><a href="presentation-equipe.html">Présentation de l’équipe</a></li>
+					<li><a href="presentation.html">Présentation du projet</a></li>
+					<li><a href="modele-sportif.html">Modélisation Sportive</a></li>
+					<li><a href="calendrier.html">Matchs, Calendrier et Playoffs</a></li>
+					<li><a href="modele-economique.html">Modèle Économique </a></li>
+					<li><a href="fonctionnalites.html">Fonctionnalités Et Fin De Simulation</a></li>
+				</ul>
+			</nav>
+
+			<aside class="sub-nav">
+				<nav>
+					<ul>
+						<li><a href="#introduction-sportive">Introduction à la modélisation sportive</a></li>
+						<li><a href="#structure-saison">Structure générale d’une saison</a></li>
+						<li><a href="#equipes">Modélisation des équipes</a></li>
+						<li><a href="#joueurs">Modélisation des joueurs</a></li>
+						<li><a href="#matchs">Modélisation des matchs</a></li>
+						<li><a href="#coherence">Cohérence globale du modèle sportif</a></li>
+					</ul>
+				</nav>
+			</aside>
+		</header>
+
+		<main>
+
+			<h1>Modélisation sportive</h1>
+			<p class="subtitle">Représentation des équipes, joueurs, matchs et résultats</p>
+
+			<section id="introduction-sportive">
+				<h2>Introduction à la modélisation sportive</h2>
+
+				<p>
+					La modélisation sportive constitue un élément central du projet
+					<strong>LEAGUE</strong>, même si l’objectif principal reste l’analyse
+					économique. Les performances sportives influencent directement
+					les revenus générés par les franchises, leur attractivité médiatique
+					et l’équilibre économique global de la ligue.
+				</p>
+
+				<p>
+					Dans ce projet, la modélisation sportive a été pensée de manière
+					simplifiée mais cohérente. L’enjeu n’est pas de reproduire fidèlement
+					chaque détail du basket professionnel, mais de proposer un cadre
+					suffisamment réaliste pour observer des tendances et des interactions
+					entre sport et économie.
+				</p>
+			</section>
+
+			<section id="structure-saison">
+				<h2>Structure générale d’une saison NBA</h2>
+
+				<h3>Saison régulière</h3>
+
+				<p>
+					La saison régulière constitue la phase principale de la compétition.
+					Elle permet d’établir un classement des équipes au sein de leur
+					conférence respective, Est ou Ouest. Chaque équipe dispute un nombre
+					fixe de matchs répartis sur l’ensemble de la saison.
+				</p>
+
+				<p>
+					Dans le cadre du projet, la saison régulière permet de déterminer les
+					équipes qualifiées pour les playoffs, d’établir une hiérarchie sportive
+					entre les franchises et de générer des revenus réguliers à travers
+					l’organisation des matchs.
+				</p>
+
+				<h3>Playoffs</h3>
+
+				<p>
+					À l’issue de la saison régulière, les huit meilleures équipes de chaque
+					conférence se qualifient pour les playoffs. Cette phase finale se déroule
+					sous la forme de séries à élimination directe.
+				</p>
+
+				<p>
+					Les playoffs représentent un moment clé de la saison, tant sur le plan
+					sportif qu’économique. Ils concentrent une forte audience et génèrent
+					des revenus supplémentaires importants.
+				</p>
+				<p>Plus d'information sur le <a href="https://www.nba.com">site de la NBA</a>.</p>
+
+				<table>
+					<thead>
+						<tr>
+							<th>Phase</th>
+							<th>Rôle principal</th>
+							<th>Impact</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Saison régulière</td>
+							<td>Classement des équipes</td>
+							<td>Sportif et financier</td>
+						</tr>
+						<tr>
+							<td>Playoffs</td>
+							<td>Désignation du champion</td>
+							<td>Forte attractivité</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section id="equipes">
+				<h2>Modélisation des équipes</h2>
+
+				<h3>Rôle des équipes</h3>
+
+				<p>
+					Les équipes représentent les franchises NBA et constituent des entités
+					centrales du système. Chaque équipe est à la fois un acteur sportif et
+					un acteur économique évoluant dans le même environnement que les autres.
+				</p>
+
+				<h3>Caractéristiques d’une équipe</h3>
+
+				<table>
+					<thead>
+						<tr>
+							<th>Attribut</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Nom</td>
+							<td>Nom de la franchise</td>
+						</tr>
+						<tr>
+							<td>Conférence</td>
+							<td>Est ou Ouest</td>
+						</tr>
+						<tr>
+							<td>Effectif</td>
+							<td>Ensemble des joueurs</td>
+						</tr>
+						<tr>
+							<td>Victoires</td>
+							<td>Nombre de matchs gagnés</td>
+						</tr>
+						<tr>
+							<td>Défaites</td>
+							<td>Nombre de matchs perdus</td>
+						</tr>
+						<tr>
+							<td>Situation financière</td>
+							<td>Budget et revenus</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<p>
+					Ces attributs sont mis à jour automatiquement au fil de la simulation
+					afin de refléter l’évolution sportive et économique des équipes.
+				</p>
+			</section>
+
+			<section id="joueurs">
+				<h2>Modélisation des joueurs</h2>
+
+				<h3>Rôle des joueurs</h3>
+
+				<p>
+					Les joueurs constituent les éléments de base des équipes. Leur présence
+					et leurs caractéristiques influencent indirectement les résultats
+					sportifs des matchs.
+				</p>
+
+				<h3>Caractéristiques des joueurs</h3>
+
+				<table>
+					<thead>
+						<tr>
+							<th>Attribut</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Poste</td>
+							<td>Position du joueur sur le terrain</td>
+						</tr>
+						<tr>
+							<td>Niveau global</td>
+							<td>Indice de performance sportive</td>
+						</tr>
+						<tr>
+							<td>Salaire</td>
+							<td>Coût financier pour l’équipe</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<p>
+					Les transferts et changements d’effectif sont entièrement gérés par le
+					programme afin d’éviter une micro-gestion excessive et de recentrer
+					l’utilisateur sur les décisions économiques.
+				</p>
+			</section>
+
+			<section id="matchs">
+				<h2>Modélisation des matchs</h2>
+
+				<h3>Définition d’un match</h3>
+
+				<p>
+					Un match oppose deux équipes, l’une jouant à domicile et l’autre à
+					l’extérieur. Chaque rencontre est simulée automatiquement par le moteur
+					du programme.
+				</p>
+
+				<h3>Génération des résultats</h3>
+
+				<p>
+					Les résultats sont générés à partir de règles simples prenant en compte
+					le niveau global des équipes, leurs performances précédentes et une
+					part d’aléatoire contrôlée afin d’éviter des résultats trop prévisibles.
+				</p>
+
+				<table>
+					<thead>
+						<tr>
+							<th>Élément</th>
+							<th>Gestion dans le projet</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Équipes</td>
+							<td>Automatique</td>
+						</tr>
+						<tr>
+							<td>Résultats</td>
+							<td>Simulés</td>
+						</tr>
+						<tr>
+							<td>Classement</td>
+							<td>Mis à jour</td>
+						</tr>
+						<tr>
+							<td>Revenus</td>
+							<td>Calculés</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+
+			<section id="coherence">
+				<h2>Cohérence globale du modèle sportif</h2>
+
+				<p>
+					L’ensemble de la modélisation sportive repose sur un compromis entre
+					simplicité et crédibilité. Les règles mises en place permettent de
+					simuler une saison complète, de générer des résultats variés et de
+					conserver une logique sportive compréhensible.
+				</p>
+
+				<p>
+					Cette modélisation constitue la base du modèle économique présenté
+					dans les pages suivantes du site.
+				</p>
+			</section>
+
+		</main>
+
+		<footer>
+			<span style="text-align: right;"><a href="#" class="back-top"><img src="image/back_top.png"
+						alt="Retour en haut" /></a>
+			</span>
+			<span><em>BAARIR Fatma-Zahra · HADDAR Karim · PHUNG Enzo</em></span>
+			<span><em>CY Cergy Paris Université — 2025–2026</em></span>
+		</footer>
+
+	</body>
+
+</html>

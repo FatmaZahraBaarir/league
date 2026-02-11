@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+  <head>
+    <title>Fonctionnalitees - Projet GL League</title>
+    <meta charset="utf-8"/>
+    <meta name="author" content="BAARIR Fatma-Zahra HADDAR Karim PHUNG Enzo"/>
+    <meta name="description" content="Présentation du Projet"/>
+    <link rel="icon" href="image/nbafavicon.png" type="image/png"/>
+    <link rel="stylesheet" href="style/style.css"/>
+  </head>
+
+  <body>
+
+    <header>
+      <a href="index.html">
+        <img class="logo" src="image/logoCYU.png" alt="Logo de l’Université de Cergy-Pontoise" width="300" height="120"/>
+      </a>
+      <nav class="main-nav">
+        <ul class="home-menu">
+          <li><a href="index.html">Accueil</a></li>
+        </ul>
+        <ul>
+          <li><a href="presentation-equipe.html">Présentation de l’équipe</a></li>
+          <li><a href="presentation.html">Présentation du projet</a></li>
+          <li><a href="modele-sportif.html">Modélisation Sportive</a></li>
+          <li><a href="calendrier.html">Matchs, Calendrier et Playoffs</a></li>
+          <li><a href="modele-economique.html">Modèle Économique </a></li>
+          <li><a href="fonctionnalites.html">Fonctionnalités Et Fin De Simulation</a></li>
+        </ul>
+      </nav>
+
+      <aside class="sub-nav">
+        <nav>
+          <ul>
+            <li><a href="#presentation-fonctionnalites">Présentation générale</a></li>
+            <li><a href="#accueil-lancement">Page d’accueil</a></li>
+            <li><a href="#vue-ligue">Vue globale de la ligue</a></li>
+            <li><a href="#consultation-equipe">Consultation d’une équipe</a></li>
+            <li><a href="#politique-financiere">Politique financière</a></li>
+            <li><a href="#suivi-saison">Suivi de la saison</a></li>
+            <li><a href="#classements-visualisation">Classements et visualisation</a></li>
+            <li><a href="#acces-playoffs">Accès aux playoffs</a></li>
+            <li><a href="#fin-simulation">Fin de simulation</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+          </ul>
+        </nav>
+      </aside>
+    </header>
+
+    <main>
+      <h1 style="text-align: center;">Fonctionnalités et Fin de Simulation</h1>
+      <p class="subtitle">Présentation des fonctionnalités de l'application et de la fin de simulation</p>
+
+      <section id="presentation-fonctionnalites">
+        <h2>Présentation générale des fonctionnalités</h2>
+        <p>
+          L'application propose un ensemble de fonctionnalités permettant à l’utilisateur de suivre,
+          analyser et comprendre le déroulement d’une saison complète de NBA d’un point de vue économique et sportif.
+        </p>
+        <p>
+          L’objectif principal de l’interface est de fournir une navigation claire, une lecture progressive des
+          informations
+          et une visualisation compréhensible des données, sans surcharger l’utilisateur.
+        </p>
+        <p>
+          Les fonctionnalités sont organisées de manière logique, en suivant le déroulement naturel d’une saison.
+        </p>
+        <figure>
+          <img src="image/interface.png" alt="Capture de l'interface graphique" width="700" height="400"/>
+          <figcaption>Interface graphique</figcaption>
+        </figure>
+      </section>
+
+      <section id="accueil-lancement">
+        <h2>Page d’accueil et lancement de la simulation</h2>
+        <p>Au lancement du logiciel, l’utilisateur accède à une page d’accueil présentant :</p>
+        <ul>
+          <li>le nom du projet,</li>
+          <li>son objectif,</li>
+          <li>les auteurs,</li>
+          <li>l’année universitaire.</li>
+        </ul>
+        <p>
+          Un bouton permet de démarrer la simulation et d’accéder à l’interface principale.
+        </p>
+        <p>
+          Cette page joue un rôle introductif et permet à l’utilisateur de comprendre rapidement le contexte du projet.
+        </p>
+      </section>
+
+      <section id="vue-ligue">
+        <h2>Vue globale de la ligue</h2>
+
+        <h3>Objectif de la vue ligue</h3>
+        <p>
+          La vue globale de la ligue permet à l’utilisateur d’avoir une vision d’ensemble de toutes les équipes
+          participant
+          à la simulation. Elle constitue le point d’entrée principal pour naviguer dans le logiciel.
+        </p>
+
+        <h3>Informations affichées</h3>
+        <p>La vue ligue peut afficher :</p>
+        <ul>
+          <li>la liste des équipes,</li>
+          <li>leur conférence,</li>
+          <li>leur position au classement,</li>
+          <li>un résumé de leur situation financière.</li>
+        </ul>
+
+        <h3>Tableau récapitulatif des équipes</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Équipe</th>
+              <th>Conférence</th>
+              <th>Classement</th>
+              <th>Situation financière</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Équipe A</td>
+              <td>Est</td>
+              <td>1</td>
+              <td>Stable</td>
+            </tr>
+            <tr>
+              <td>Équipe B</td>
+              <td>Ouest</td>
+              <td>3</td>
+              <td>En croissance</td>
+            </tr>
+            <tr>
+              <td>Équipe C</td>
+              <td>Est</td>
+              <td>7</td>
+              <td>Fragile</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Ce tableau permet de comparer rapidement les franchises.</p>
+        <figure>
+          <img src="image/mapNBA.png" alt="Carte de la NBA" width="700" height="500"/>
+          <figcaption>Carte de la NBA</figcaption>
+        </figure>
+      </section>
+
+      <section id="consultation-equipe">
+        <h2>Consultation d’une équipe</h2>
+
+        <h3>Page dédiée à une franchise</h3>
+        <p>
+          En sélectionnant une équipe, l’utilisateur accède à une page dédiée affichant les informations principales de
+          la franchise.
+        </p>
+
+        <h3>Informations disponibles</h3>
+        <p>Cette page présente notamment :</p>
+        <ul>
+          <li>la politique financière actuelle,</li>
+          <li>les performances sportives passées,</li>
+          <li>la situation financière globale,</li>
+          <li>l’évolution du budget au cours de la saison.</li>
+        </ul>
+
+        <h3>Exemple de tableau de suivi d’équipe</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Indicateur</th>
+              <th>Valeur</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Victoires</td>
+              <td>42</td>
+            </tr>
+            <tr>
+              <td>Défaites</td>
+              <td>40</td>
+            </tr>
+            <tr>
+              <td>Politique financière</td>
+              <td>Équilibrée</td>
+            </tr>
+            <tr>
+              <td>Budget actuel</td>
+              <td>120 M€</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="politique-financiere">
+        <h2>Choix et modification de la politique financière</h2>
+        <p>
+          L’utilisateur peut modifier la politique financière d’une équipe à tout moment de la simulation. Ce choix
+          représente
+          le niveau de risque financier que la franchise est prête à prendre.
+        </p>
+        <p>La modification de la politique financière influence :</p>
+        <ul>
+          <li>les investissements réalisés,</li>
+          <li>les performances sportives futures,</li>
+          <li>l’évolution du budget.</li>
+        </ul>
+        <p>
+          Ce mécanisme constitue l’un des leviers principaux de la simulation.
+        </p>
+      </section>
+
+      <section id="suivi-saison">
+        <h2>Suivi des matchs et de la saison</h2>
+
+        <h3>Organisation des matchs</h3>
+        <p>
+          Le logiciel permet de suivre la saison à travers une liste de matchs organisée par journées. Chaque rencontre
+          est associée à :
+        </p>
+        <ul>
+          <li>un résultat sportif,</li>
+          <li>des données financières.</li>
+        </ul>
+
+        <h3>Exemple de tableau de suivi des matchs</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Match</th>
+              <th>Résultat</th>
+              <th>Impact financier</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>12/01</td>
+              <td>A vs B</td>
+              <td>98 – 92</td>
+              <td>+1,2 M€</td>
+            </tr>
+            <tr>
+              <td>15/01</td>
+              <td>C vs D</td>
+              <td>105 – 101</td>
+              <td>+0,9 M€</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Ce tableau permet de suivre l’évolution de la saison de manière chronologique.</p>
+      </section>
+
+      <section id="classements-visualisation">
+        <h2>Classements et visualisation des données</h2>
+
+        <h3>Classements</h3>
+        <p>
+          L’utilisateur peut accéder aux classements par conférence afin de suivre l’évolution des équipes tout au long
+          de la saison.
+        </p>
+
+        <h3>Visualisation financière</h3>
+        <p>Les données financières sont présentées sous différentes formes :</p>
+        <ul>
+          <li>tableaux,</li>
+          <li>courbes,</li>
+          <li>histogrammes.</li>
+        </ul>
+        <p>
+          Ces représentations facilitent l’analyse et la comparaison entre les équipes.
+        </p>
+
+        <h3>Exemple de tableau financier</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Équipe</th>
+              <th>Revenus totaux</th>
+              <th>Dépenses</th>
+              <th>Bilan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Équipe A</td>
+              <td>250 M€</td>
+              <td>210 M€</td>
+              <td>+40 M€</td>
+            </tr>
+            <tr>
+              <td>Équipe B</td>
+              <td>230 M€</td>
+              <td>225 M€</td>
+              <td>+5 M€</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="acces-playoffs">
+        <h2>Accès aux playoffs</h2>
+        <p>
+          À la fin de la saison régulière, la phase des playoffs est déclenchée automatiquement. Une page dédiée permet
+          de suivre
+          les différentes séries de confrontations.
+        </p>
+        <p>
+          Chaque tour est affiché de manière claire, jusqu’à la finale NBA.
+        </p>
+        <figure>
+          <img src="image/playoffs.png" alt="Playoffs NBA" width="700" height="400"/>
+          <figcaption>Playoffs NBA</figcaption>
+        </figure>
+      </section>
+
+      <section id="fin-simulation">
+        <h2>Fin de simulation et récapitulatif final</h2>
+        <p>
+          À l’issue de la finale NBA, un récapitulatif de fin de saison est affiché. Il présente :
+        </p>
+        <ul>
+          <li>les classements finaux,</li>
+          <li>les performances sportives globales,</li>
+          <li>le bilan financier de chaque franchise,</li>
+          <li>le bilan global de la ligue.</li>
+        </ul>
+        <p>
+          Ce récapitulatif permet à l’utilisateur d’analyser les conséquences des choix économiques effectués tout au
+          long de la simulation.
+        </p>
+      </section>
+
+      <section id="conclusion">
+        <h2>Conclusion générale</h2>
+        <p>
+          Le projet <strong>LEAGUE</strong> propose une simulation économique cohérente et structurée d’une saison de
+          NBA. Il met en évidence
+          les liens étroits entre décisions financières et performances sportives, tout en respectant les contraintes
+          techniques et pédagogiques du projet.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <span style="text-align: right;"><a href="#" class="back-top"><img src="image/back_top.png"
+            alt="Retour en haut" /></a>
+      </span>
+      <span><em>BAARIR Fatma-Zahra · HADDAR Karim · PHUNG Enzo</em></span>
+      <span><em>CY Cergy Paris Université — 2025–2026</em></span>
+    </footer>
+  </body>
+
+</html>

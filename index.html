@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<title>Projet GL League</title>
+		<meta charset="utf-8"/>
+		<meta name="author" content="BAARIR Fatma-Zahra HADDAR Karim PHUNG Enzo"/>
+		<meta name="description"
+			content="Accueil du projet LEAGUE : Simulation de la gestion économique d’une saison de NBA"/>
+		<link rel="icon" href="image/nbafavicon.png" type="image/jpeg"/>
+		<link rel="stylesheet" href="style/style.css"/>
+		<style>
+			h1 {
+				letter-spacing: 3px;
+			}
+
+			h1::before {
+				content: "🏀";
+			}
+
+			.problematic {
+				font-style: italic;
+				color: #c0392b;
+				background-color: #f9e5e5;
+				padding: 10px;
+				border-left: 4px solid #c0392b;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<a href="index.html">
+				<img class="logo" src="image/logoCYU.png" alt="Logo de l’Université de Cergy-Pontoise" width="300"
+					height="120"/>
+			</a>
+			<nav class="main-nav">
+				<ul class="home-menu">
+					<li><a href="index.html">Accueil</a></li>
+				</ul>
+				<ul>
+					<li><a href="presentation-equipe.html">Présentation de l’équipe</a></li>
+					<li><a href="presentation.html">Présentation du projet</a></li>
+					<li><a href="modele-sportif.html">Modélisation Sportive</a></li>
+					<li><a href="calendrier.html">Matchs, Calendrier et Playoffs</a></li>
+					<li><a href="modele-economique.html">Modèle Économique </a></li>
+					<li><a href="fonctionnalites.html">Fonctionnalités Et Fin De Simulation</a></li>
+				</ul>
+			</nav>
+
+			<aside class="sub-nav">
+				<nav>
+					<ul>
+						<li><a href="#contexte-universitaire">Contexte universitaire</a></li>
+						<li><a href="#presentation-projet">Présentation du projet</a></li>
+						<li><a href="#problematique">Problématique</a></li>
+						<li><a href="#objectifs">Objectifs</a></li>
+						<li><a href="#organisation-site">Organisation du site</a></li>
+					</ul>
+				</nav>
+			</aside>
+		</header>
+
+		<main>
+			<h1 style="text-align: center;">League</h1>
+			<p class="subtitle">Simulation de la gestion économique d’une saison de NBA</p>
+
+			<section id="contexte-universitaire">
+				<h2>Contexte universitaire du projet</h2>
+
+				<p>
+					Le projet <strong>LEAGUE</strong> s’inscrit dans le cadre de la formation en
+					<strong>Licence 2 Informatique</strong> à CY Cergy Paris Université, durant l’année
+					universitaire <em>2025–2026</em>.
+					Il correspond au projet n°22 proposé dans les enseignements de
+					génie logiciel et de programmation orientée objet.
+				</p>
+
+				<p>
+					Ce projet est réalisé par un groupe de trois étudiants, dans un contexte
+					pédagogique visant à reproduire les étapes essentielles de la conception
+					d’un logiciel.
+				</p>
+
+				<table>
+					<caption>Équipe du projet</caption>
+					<thead>
+						<tr>
+							<th>Nom</th>
+							<th>Prénom</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>BAARIR</td>
+							<td>Fatma-Zahra</td>
+						</tr>
+						<tr>
+							<td>HADDAR</td>
+							<td>Karim</td>
+						</tr>
+						<tr>
+							<td>PHUNG</td>
+							<td>Enzo</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>Plus d'informations sur l'équipe sont disponibles dans la page <a
+						href="presentation-equipe.html#membres-equipe">Présentation de l’équipe</a>.</p>
+				<p>
+					L’objectif pédagogique principal est de mettre en pratique les notions vues
+					en cours, notamment la modélisation d’un système complexe, la programmation
+					orientée objet, la séparation entre logique métier et interface graphique,
+					ainsi que la structuration globale d’un projet logiciel.
+				</p>
+
+			</section>
+
+			<section id="presentation-projet">
+				<h2>Présentation générale du projet</h2>
+
+				<p style="background-color: #f9f9f9; padding: 8px;">
+					Le projet <strong>LEAGUE</strong> est une application de simulation économique
+					visant à modéliser le fonctionnement financier d’une saison complète de NBA.
+					Cette saison est découpée en deux grandes phases distinctes :
+					la saison régulière et les playoffs.
+				</p>
+
+				<p>
+					Contrairement à un jeu de gestion classique, l’utilisateur ne contrôle
+					aucun aspect sportif direct. Il n’intervient ni sur les compositions
+					d’équipe, ni sur les stratégies de jeu, ni sur les transferts.
+					L’ensemble des éléments sportifs est simulé automatiquement par le programme.
+				</p>
+
+				<p>
+					Le rôle de l’utilisateur se limite volontairement aux paramètres économiques.
+					Ce choix permet de concentrer l’analyse sur l’impact des décisions financières
+					sur les performances sportives, la stabilité économique des franchises et
+					l’équilibre global de la ligue.
+				</p>
+			</section>
+
+			<section id="problematique">
+				<h2>Problématique abordée</h2>
+
+				<p>
+					La NBA est une ligue dans laquelle les performances sportives et les décisions
+					économiques sont étroitement liées. Une franchise qui investit massivement
+					peut améliorer ses résultats à court terme, tout en prenant un risque
+					financier important.
+				</p>
+
+				<p>
+					À l’inverse, une gestion trop prudente peut préserver les finances de
+					l’équipe, mais limiter sa compétitivité sportive.
+					Le projet cherche donc à répondre à la question suivante :
+				</p>
+
+				<p class="problematic">
+					Comment les choix économiques influencent-ils le déroulement sportif et
+					financier d’une saison NBA à l’échelle de la ligue ?
+				</p>
+
+				<p>
+					Pour y répondre, la simulation proposée est volontairement simplifiée,
+					tout en restant cohérente, afin d’observer les conséquences globales
+					des décisions économiques sur une saison complète.
+				</p>
+			</section>
+
+			<section id="objectifs">
+				<h2>Objectifs du projet</h2>
+
+				<h3>Objectifs fonctionnels</h3>
+				<ul class="custom-list">
+					<li>Simuler une saison complète de NBA</li>
+					<li>Représenter l’ensemble des équipes de la ligue</li>
+					<li>Gérer automatiquement les matchs et résultats sportifs</li>
+					<li>Suivre l’évolution financière des franchises</li>
+					<li>Visualiser les classements et les résultats</li>
+				</ul>
+				<p>Voir la page <a href="presentation.html#objectifs-detailles">Fonctionnalités</a> pour plus de détails.
+				</p>
+
+				<h3>Objectifs pédagogiques</h3>
+				<table>
+					<thead>
+						<tr>
+							<th>Objectif</th>
+							<th>Description</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Modélisation</td>
+							<td>Représenter un système réel de manière simplifiée</td>
+						</tr>
+						<tr>
+							<td>Programmation</td>
+							<td>Implémenter une architecture logicielle claire</td>
+						</tr>
+						<tr>
+							<td>Génie logiciel</td>
+							<td>Séparer la logique métier de l’interface</td>
+						</tr>
+						<tr>
+							<td>Simulation</td>
+							<td>Gérer des données évolutives sur une saison</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<h3>Objectifs techniques</h3>
+				<p>
+					Le projet est développé en Java et repose sur une architecture structurée,
+					assurant une séparation nette entre le moteur de simulation et
+					l’interface graphique, tout en garantissant la cohérence globale du modèle.
+				</p>
+			</section>
+			<figure class="content-image">
+				<img src="image/nba_map.jpg" alt="Carte des franchises NBA"/>
+				<figcaption>
+					Carte représentant l’ensemble des franchises NBA prises en compte dans la simulation.
+					<a href="https://whosthebet.blogspot.com/2016/01/la-nba-pour-les-nuls-lorigine-des-noms.html">source
+						image</a>
+				</figcaption>
+
+			</figure>
+
+			<section id="organisation-site">
+				<h2>Organisation du site web</h2>
+
+				<p>
+					Le site web associé au projet est structuré en plusieurs pages,
+					chacune correspondant à un aspect précis du système simulé.
+					Cette organisation permet une lecture progressive et structurée du projet.
+				</p>
+
+				<table>
+					<thead style="background-color: #eef3fb;">
+						<tr>
+							<th>Page</th>
+							<th>Contenu</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Accueil</td>
+							<td>Présentation générale du projet</td>
+						</tr>
+
+						<tr>
+							<td>Présentation de l’équipe</td>
+							<td>Présentation des membres de l’équipe projet</td>
+						</tr>
+						<tr>
+							<td>Présentation</td>
+							<td>Objectifs et principes de conception</td>
+						</tr>
+						<tr>
+							<td>Modèle sportif</td>
+							<td>Équipes, joueurs et matchs</td>
+						</tr>
+						<tr>
+							<td>Calendrier</td>
+							<td>Saison régulière et playoffs</td>
+						</tr>
+						<tr>
+							<td>Modèle économique</td>
+							<td>Revenus et politiques financières</td>
+						</tr>
+						<tr>
+							<td>Fonctionnalités</td>
+							<td>Interface et fin de simulation</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section>
+				<h3>Liens</h3>
+				<ul>
+					<li><a href="https://www.cyu.fr" target="_blank" class="link-btn">Aller sur CYU</a></li>
+					<li><a href="https://www.youtube.com/results?search_query=tuto+html" target="_blank"
+							class="link-btn">Tutoriel HTML sur YouTube</a></li>
+					<li><a href="https://cyiut.cyu.fr/medias/fichier/reglement-des-examens-cy-2024_1732798360031-pdf"
+							target="_blank" rel="noopener noreferrer" class="link-btn">Règlement des examens CYU — PDF</a></li>
+					<li><a href="readme.md" class="link-btn">Readme</a></li>
+				</ul>
+			</section>
+			<div>
+			<p style="text-align: center;">Vous pouvez également consulter le <a href="docs/cahierdescharge.pdf" class="pdf-link">rapport de projet (PDF)</a> pour une analyse détaillée du développement du projet.</p>
+			</div>
+		</main>
+
+		<footer>
+			<span style="text-align: right;"><a href="#" class="back-top"><img src="image/back_top.png"
+						alt="Retour en haut" /></a>
+			</span>
+			<span><em>BAARIR Fatma-Zahra · HADDAR Karim · PHUNG Enzo</em></span>
+			<span><em>CY Cergy Paris Université — 2025–2026</em></span>
+		</footer>
+
+	</body>
+
+</html>

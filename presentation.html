@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<title>Presentation du Projet - Projet GL League</title>
+		<meta charset="utf-8"/>
+		<meta name="author" content="BAARIR Fatma-Zahra HADDAR Karim PHUNG Enzo"/>
+		<meta name="description" content="Présentation détaillée du projet LEAGUE"/>
+		<link rel="icon" href="image/nbafavicon.png" type="image/jpeg"/>
+		<link rel="stylesheet" href="style/style.css" />
+	</head>
+
+	<body>
+		<header>
+			<a href="index.html">
+				<img class="logo" src="image/logoCYU.png" alt="Logo de l’Université de Cergy-Pontoise" width="300"
+					height="120" />
+			</a>
+			<nav class="main-nav">
+				<ul class="home-menu">
+					<li><a href="index.html">Accueil</a></li>
+				</ul>
+				<ul>
+					<li><a href="presentation-equipe.html">Présentation de l’équipe</a></li>
+					<li><a href="presentation.html">Présentation du projet</a></li>
+					<li><a href="modele-sportif.html">Modélisation Sportive</a></li>
+					<li><a href="calendrier.html">Matchs, Calendrier et Playoffs</a></li>
+					<li><a href="modele-economique.html">Modèle Économique </a></li>
+					<li><a href="fonctionnalites.html">Fonctionnalités Et Fin De Simulation</a></li>
+				</ul>
+			</nav>
+
+			<aside class="sub-nav">
+				<nav>
+					<ul>
+						<li><a href="#introduction">Introduction générale</a></li>
+						<li><a href="#principe-simulation">Principe fondamental de la simulation</a></li>
+						<li><a href="#echelle-ligue">Échelle de la simulation : la ligue</a></li>
+						<li><a href="#simplifications">Simplifications volontaires du modèle</a></li>
+						<li><a href="#objectifs-detailles">Objectifs détaillés du projet</a></li>
+						<li><a href="#place-cursus">Place du projet dans le cursus</a></li>
+					</ul>
+				</nav>
+			</aside>
+		</header>
+
+		<main>
+
+			<h1>Présentation détaillée du projet</h1>
+			<p class="subtitle">Principes, objectifs et choix de conception</p>
+
+			<section id="introduction">
+				<a id="objectif-principal"></a>
+				<h2>Introduction générale</h2>
+
+				<p>
+					Le projet <strong>LEAGUE</strong> a pour objectif de concevoir une application
+					de simulation économique permettant de modéliser le fonctionnement d’une
+					saison complète de NBA. Cette simulation couvre l’ensemble du cycle sportif,
+					depuis le début de la saison régulière jusqu’à la finale NBA, tout en
+					intégrant les mécanismes économiques qui structurent la ligue.
+				</p>
+
+				<p>
+					La NBA constitue un exemple particulièrement pertinent de ligue sportive
+					professionnelle, dans laquelle les décisions économiques ont une influence
+					directe sur les performances sportives, la compétitivité des équipes et
+					l’attractivité globale du championnat. Ce projet vise ainsi à proposer une
+					représentation cohérente et exploitable de ces interactions complexes.
+				</p>
+			</section>
+
+			<section id="principe-simulation">
+				<h2>Principe fondamental de la simulation</h2>
+
+				<h3>Rôle de l’utilisateur</h3>
+
+				<p>
+					L’utilisateur n’intervient jamais directement sur le déroulement sportif
+					des matchs. Il ne choisit ni les compositions d’équipe, ni les tactiques,
+					ni les actions de jeu, ni les résultats des rencontres.
+				</p>
+
+				<p>
+					Son rôle est exclusivement économique. Il agit sur les politiques financières
+					des franchises, analyse les revenus et les dépenses, et observe les
+					conséquences de ces choix sur le déroulement global de la saison.
+				</p>
+
+				<p>
+					Ce choix de conception permet d’éviter une complexité excessive et garantit
+					une simulation stable et cohérente.
+				</p>
+
+				<h3>Rôle du moteur de simulation</h3>
+
+				<p>
+					Le moteur de simulation est responsable de la génération automatique des
+					matchs, de la simulation des résultats sportifs, de la mise à jour des
+					classements et du calcul des impacts financiers liés aux rencontres.
+				</p>
+
+				<p>
+					Les résultats sportifs sont générés à partir du niveau global des équipes,
+					de règles simplifiées et d’une part d’aléatoire contrôlée. Cette approche
+					permet de conserver une logique sportive crédible sans chercher à reproduire
+					fidèlement l’intégralité des règles officielles de la NBA.
+				</p>
+			</section>
+
+			<section id="echelle-ligue">
+				<h2>Échelle de la simulation : la ligue</h2>
+
+				<h3>Approche globale</h3>
+
+				<p>
+					Un choix fondamental du projet est de réaliser la simulation à l’échelle de
+					la ligue entière, et non à celle d’une équipe individuelle. Simuler une seule
+					équipe aurait conduit à un modèle partiel et biaisé.
+				</p>
+
+				<p>
+					À l’inverse, la simulation globale permet d’observer les dynamiques
+					collectives, de comparer les stratégies économiques entre franchises et de
+					mesurer l’impact global des décisions financières.
+				</p>
+
+				<table>
+					<thead>
+						<tr>
+							<th>Élément</th>
+							<th>Conséquence</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Équipes</td>
+							<td>Toutes simulées simultanément</td>
+						</tr>
+						<tr>
+							<td>Matchs</td>
+							<td>Générés pour l’ensemble de la ligue</td>
+						</tr>
+						<tr>
+							<td>Finances</td>
+							<td>Comparables entre franchises</td>
+						</tr>
+						<tr>
+							<td>Classements</td>
+							<td>Calculés globalement</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section id="simplifications">
+				<h2>Simplifications volontaires du modèle</h2>
+
+				<p>
+					Le projet ne cherche pas à reproduire fidèlement l’ensemble des règles
+					officielles de la NBA. Des simplifications ont été volontairement introduites
+					afin de respecter les contraintes de temps et de complexité du projet.
+				</p>
+
+				<table>
+					<thead>
+						<tr>
+							<th>Élément réel</th>
+							<th>Simplification dans le projet</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Contrats des joueurs</td>
+							<td>Salaires simplifiés</td>
+						</tr>
+						<tr>
+							<td>Tactiques de jeu</td>
+							<td>Non simulées</td>
+						</tr>
+						<tr>
+							<td>Blessures complexes</td>
+							<td>Gestion simplifiée</td>
+						</tr>
+						<tr>
+							<td>Marché des transferts</td>
+							<td>Automatisé</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section id="objectifs-detailles">
+				<h2>Objectifs détaillés du projet</h2>
+
+				<h3>Objectifs fonctionnels</h3>
+				<ul class="custom-list">
+					<li>Lancer une simulation complète de saison NBA</li>
+					<li>Suivre les résultats sportifs de chaque équipe</li>
+					<li>Visualiser les classements par conférence</li>
+					<li>Observer l’évolution financière des franchises</li>
+					<li>Accéder aux playoffs et à la finale NBA</li>
+				</ul>
+
+				<h3>Objectifs analytiques</h3>
+				<ul class="custom-list">
+					<li>Analyser l’impact des politiques financières</li>
+					<li>Comparer différentes stratégies économiques</li>
+					<li>Observer les liens entre finances et performances sportives</li>
+				</ul>
+
+			</section>
+
+			<section id="place-cursus">
+				<h2>Place du projet dans le cursus</h2>
+
+				<p>
+					Ce projet s’inscrit pleinement dans la logique de la formation en
+					informatique. Il mobilise plusieurs compétences clés acquises au cours
+					de la licence, notamment la programmation orientée objet, la conception
+					de classes, la gestion de données évolutives et la séparation entre
+					logique métier et interface graphique.
+				</p>
+
+				<p>
+					Il constitue une synthèse des connaissances acquises et prépare à des
+					projets plus complexes en fin de cursus.
+				</p>
+			</section>
+
+		</main>
+
+		<footer>
+			<span style="text-align: right;"><a href="#" class="back-top"><img src="image/back_top.png"
+						alt="Retour en haut" /></a>
+			</span>
+			<span><em>BAARIR Fatma-Zahra · HADDAR Karim · PHUNG Enzo</em></span>
+			<span><em>CY Cergy Paris Université — 2025–2026</em></span>
+		</footer>
+
+	</body>
+
+</html>
